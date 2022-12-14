@@ -20,4 +20,5 @@ kubectl get pods
 
 # Step 4:
 # Forward the container port to a host
+kubectl wait --for=condition=ready pod --all
 kubectl port-forward housing-ml 8000:80
